@@ -1,0 +1,45 @@
+.inptForm{
+    width: 100%;
+    height: 60px;
+    padding: 0 10px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 2px solid var(--color-gray-100);
+    border-radius: 8px;
+
+    & > button {
+        width: 53px;
+        height: 40px;
+
+        border-radius: 8px;
+        background-color: var(--color-primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & > input[type="text"] {
+        width: 100%;
+        font-size: 1rem;
+        color: var(--color-gray-600);
+        outline: none;
+    }
+
+    ::-webkit-input-placeholder {
+        color: var(--color-gray-100);
+    }
+
+    @media (min-width: 768px) {
+        width: 365px;
+    }
+}
+
+.inptForm:hover {
+    border-color: var(--color-gray-600);
+
+    ::-webkit-input-placeholder {
+        color: var(--color-gray-300);
+    }
+}

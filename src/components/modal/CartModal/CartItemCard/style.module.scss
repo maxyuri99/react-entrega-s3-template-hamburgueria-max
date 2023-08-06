@@ -1,0 +1,46 @@
+.flexBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+
+    &>div:first-child {
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+
+        &>div {
+            width: 80px;
+            height: 82px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-gray-100);
+            border-radius: 5px;
+
+            img {
+                width: 55px;
+                height: 53px;
+            }
+        }
+    }
+
+    &>div:last-child {
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &>div{
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    .buttonRemove{ 
+        color: var(--color-gray-400);
+    }
+    .buttonRemove:hover{ 
+        color: var(--color-primary);
+    }
+}
