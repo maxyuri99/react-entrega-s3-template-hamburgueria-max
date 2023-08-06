@@ -1,0 +1,46 @@
+.title{ 
+    font-family: var(--font-primary);
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--gray-600);
+
+    &.colorWhite {
+        color: #FFFF;
+    }
+}
+
+.paragraph{
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.6;
+
+    &.bold, strong{
+        font-weight: 600;
+    }
+
+    &.big{
+        font-size: 1rem;
+    }
+
+    &.small{
+        font-size: 0.75rem;
+    }
+
+    &.colorGreen {
+        color: var(--color-primary);
+    }
+
+    &.colorGray3 {
+        color: var(--color-gray-300);
+    }
+
+    &.colorGray4 {
+        color: var(--color-gray-400);
+    }
+
+    &.colorWhite {
+        color: #FFFF;
+    }
+
+}
