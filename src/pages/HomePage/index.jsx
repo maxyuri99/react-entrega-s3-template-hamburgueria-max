@@ -11,10 +11,15 @@ export const HomePage = () => {
    const [search, setSearch] = useState("")
    const [products, setProducts] = useState([])
    const localCartList = localStorage.getItem("@CARTLIST")
+
    const [cartList, setCartList] = useState(
       localCartList ? JSON.parse(localCartList) : []
    )
    const [loading, setLoading] = useState(false)
+
+   useEffect(() => {
+      localStorage.setItem("@CARTLIST", JSON.stringify(cartList))
+   }, [cartList])
 
    const addCard = (addingCard) => {
       setCartList([...cartList, addingCard])

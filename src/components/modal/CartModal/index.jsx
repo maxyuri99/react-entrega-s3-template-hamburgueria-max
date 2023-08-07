@@ -29,7 +29,7 @@ export const CartModal = ({ setVisible, cartList, removeCart, addCard }) => {
       return prevValue + product.price
    }, 0)
 
-   const verifyList = Array.from(new Set(cartList))
+   const verifyList = Array.from(new Set(cartList.map(JSON.stringify))).map(JSON.parse)
 
    return (
       <div className={styles.overlayBox} role="dialog">
